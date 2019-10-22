@@ -55,8 +55,11 @@ export default {
   },
   methods: {
     onSubmit () {
-      if (this.confirmPassword === this.password) {
+      if (this.password && (this.confirmPassword === this.password)) {
         alert("Yeah! " + this.email + ' ' + this.password)
+      }
+      else {
+        alert("Nope!")
       }
     }
   }
