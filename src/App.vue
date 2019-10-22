@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar type="dark" variant="dark">
       <b-container>
         <b-navbar-brand to="/">Items App</b-navbar-brand>
 
@@ -20,7 +20,9 @@
     </b-navbar>
 
     <b-container>
-      <router-view />
+      <main>
+        <router-view />
+      </main>
     </b-container>
 
   </div>
@@ -35,3 +37,8 @@ export default {
 }
 </script>
 
+<style scoped>
+  main {
+    padding-top: 56px;
+  }
+</style>
